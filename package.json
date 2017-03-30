@@ -19,6 +19,7 @@
     "@angular/http": "4.0.0",
     "@angular/platform-browser": "4.0.0",
     "@angular/platform-browser-dynamic": "4.0.0",
+    "@ionic-native/action-sheet": "^3.4.4",
     "@ionic-native/core": "^3.4.4",
     "@ionic-native/toast": "^3.4.4",
     "ionic-angular": "^3.0.0-beta.3",
