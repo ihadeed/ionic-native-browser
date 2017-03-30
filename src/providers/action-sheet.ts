@@ -15,7 +15,10 @@ export class ActionSheet {
             buttons: options.buttonLabels
         });
         this.actionSheet.present();
-        return new Promise<any>(resolve => this.actionSheet.onDidDismiss(data => resolve(data)));
+        return new Promise<any>(resolve => {
+            this.actionSheet.onDidDismiss(data => resolve(data));
+            this.actionSheet = undefined;
+        });
     }
 
     hide(options?: ActionSheetOptions): Promise<any> {
